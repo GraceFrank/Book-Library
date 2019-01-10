@@ -1,0 +1,42 @@
+﻿Book Library 
+
+
+Requirements
+Fellows are required to have completed the following Outcomes: 1 - 4
+
+
+Problem Description
+A book Library where a student, teacher borrows books. When the copy of the book is no longer in the library. The library should return ‘book taken’. They can be multiple copies of the same book in the library. The books are given in first come first serve, however, when a teacher is requesting for the same book a student is ask ing for, the teacher comes first, When a junior student is asking for the same book a senior student is asking for, the senior student comes first.
+
+
+
+
+How will I complete this project?
+1. Use ES5/ES6 consistently throughout the project 
+2. Organise the folders for your module (application), to house both your code base and the tests
+3. Write tests to cover all the methods to be written, before development begins (TDD) 
+4. All the tests should fail, hopefully, for all the methods below
+5. Test acceptance is 97% coverage.
+
+
+
+
+
+
+Steps to evaluate the String class checkpoint
+1. Prototype Methods
+   1. At Minimum
+      1. The Teacher and the teacher should be prototyped into the person data type classes, No functions should be declared outside the prototyping of the classes.
+      2. All tests must test all methods, including the conditionals that they may contain (Arguments are customized in the tests, so all conditions in the method get tested)
+      3. Repeated activities are put into functions and referenced from there
+   1. Exceed Specifications
+      1. All the functions are implemented with Inheritance..
+      2. The codebase is efficient, not redundant loops or method calls that could deter performance.
+      3. All Repeated activities are put into functions and referenced from there
+
+
+1. Test Coverage
+   1. At Minimum
+      1. All the prototyped methods are to be covered fully with tests
+      2. The tests should cover the methods as well as the conditions/procedures that the methods employed
+      3. All the comparators used for the tests must be the optimum or most efficient comparator for the scenario
