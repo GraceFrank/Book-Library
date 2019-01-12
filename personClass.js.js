@@ -1,20 +1,10 @@
-const queue = [
-
-];
-
-
-
-
-
-
-
 class Person {
     constructor(name) {
         this.name = name;
 
 
     }
-    borrow(book) {
+    request(book) {
         queue.push(this)
     }
     returnB(book) {
@@ -54,19 +44,11 @@ class JuniorStudent extends Student {
     }
 }
 
-// const dareLawal = new Teacher('dareLawal');
-// const graceFrank = new SeniorStudent('graceFrank');
-// const vickyFrank = new JuniorStudent('vickyFrank')
-// console.log(dareLawal.borrow('george of the jungle'));
-// console.log(graceFrank.borrow('george of the jungle'));
-// console.log(vickyFrank.borrow('george of the jungle'));
 
-
-
-// // queue.sort(function (a, b) {
-// //     return a.priority - b.priority;
-// // });
-
-// // console.log(queue);
-
-console.log(queue)
+const school = {
+    dareLawal: new Teacher('dareLawal'),
+    graceFrank: new SeniorStudent('graceFrank'),
+    vickyFrank: new JuniorStudent('vickyFrank'),
+    frank: new SeniorStudent('frank'),
+    lanre: new Teacher('lanre')
+}
