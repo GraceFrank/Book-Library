@@ -69,9 +69,11 @@ class Book {
         if (this.avilableCopies >= 1 && this.borrowers.has(userName) === false) {
             this.avilableCopies--;
             this.borrowers.add(userName);
-            return `${userName}: ${this.title} book suscesfullly borrowed by ${userName}`;
+            console.log(`${userName}: ${this.title} book suscesfullly borrowed by ${userName}`);
+            return true;
         } else {
-            return `${userName}: ${this.title} book Taken`
+            console.log(`${userName}: ${this.title} book Taken`);
+            return false; 
         } //end of else statement
     } //end of if statement
 
@@ -79,10 +81,12 @@ class Book {
         if (this.borrowers.has(userName)) {
             this.avilableCopies++;
 
-            this.borrowers.delete(userName, )
-            return `${this.title} book suscesfullly returned by ${userName}`;
+            this.borrowers.delete(userName)
+            console.log(`${this.title} book suscesfullly returned by ${userName}`);
+            return true;
         } else {
-            return `${userName}: ${this.title} Book not borrowed`
+            console.log(`${userName}: ${this.title} Book not borrowed`);
+            return false;
         } //end of else statement
     } //end of if statement
 
@@ -146,5 +150,6 @@ module.exports = {
     personClass: Person,
     seniorStudent: SeniorStudent,
     juniorStudent: JuniorStudent,
-    bookClass: Book
+    bookClass: Book,
+    teacher : Teacher
 }

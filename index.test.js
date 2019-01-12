@@ -4,6 +4,7 @@ const Book = libraryMethods.bookClass;
 const Person = libraryMethods.personClass;
 const SeniorStudent = libraryMethods.seniorStudent;
 const JuniorStudent = libraryMethods.juniorStudent;
+const Teacher = libraryMethods.teacher;
 
 
 const library = {
@@ -21,15 +22,57 @@ const school = {
 }
 
 
-// //Returns each letter in the string as an inverse of its current case
-// describe('9.  Inverses the case of characters in a string', () => {
-//     test('A simple case of a string', () => {
-//         expect('Mr Ben'.inverseCase()).toEqual('mR bEN');
-//     });
-//     test('a case of a sentence', () => {
-//         expect('I Love You'.inverseCase()).toEqual('i lOVE yOU');
-//     });
-//     test('a case of a sentence containing non-alphabets', () => {
-//         expect('Will we go?'.inverseCase()).toEqual('wILL WE GO?');
-//     });
-// });
+
+//Returns each letter in the string as an inverse of its current case
+
+
+describe('borrow book function  works', () => {
+    
+    test('a case where a person requests a book ', () => {
+        const airtel = new Book('airtel', 10);
+        const graceFrank = new SeniorStudent('graceFrank');
+        expect(airtel.borrow(graceFrank.name)).toBe(true);
+    });
+    test('where a person requests a book already borrowed ', () => {
+        const airtel = new Book('airtel', 10);
+        const graceFrank = new SeniorStudent('graceFrank');
+        airtel.borrow(graceFrank.name)
+        expect(airtel.borrow(graceFrank.name)).toBe(false);
+    });
+   
+});
+
+describe('retun book function  works', () => {
+
+    test('a case where a person returns a book after borrowing ', () => {
+        const airtel = new Book('airtel', 10);
+        const graceFrank = new SeniorStudent('graceFrank');
+        airtel.borrow(graceFrank.name)
+
+        expect(airtel.returnBook(graceFrank.name)).toBe(true);
+    });
+    test('where a person returns a book not borrowed ', () => {
+        const airtel = new Book('airtel', 10);
+        const graceFrank = new SeniorStudent('graceFrank');
+            expect(airtel.returnBook(graceFrank.name)).toBe(false);
+    });
+
+});
+
+       
+describe('test that the prority queue works', () => {
+
+    test('a case where a person returns a book after borrowing ', () => {
+        const airtel = new Book('airtel', 10);
+        const graceFrank = new SeniorStudent('graceFrank');
+        const dareLawal = new Teacher('dareLawal');
+        const vickyFrank = new JuniorStudent('vickyFrank');
+
+        
+
+        expect(airtel.processesbookRequest()).toBe(true);
+    });
+
+
+});
+
