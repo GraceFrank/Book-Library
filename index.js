@@ -143,5 +143,8 @@ library['georgeOfTheJungle'].processesbookRequest();
 
 
 module.exports = {
-    bookConstrutor: Book,
+    personClass: Person,
+    seniorStudent: SeniorStudent,
+    juniorStudent: JuniorStudent,
+    bookClass: Book
 }

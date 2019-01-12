@@ -8,12 +8,12 @@ class Book {
     }
 
     processesbookRequest(personObject) {
-        bookRequest.sort(function (a, b) {
+        this.bookRequest.sort(function (a, b) {
             return a.priority - b.priority;
         });
 
-        for (let i = 0; i < bookRequest.length; i++) {
-            console.log(this.borrow(students[i].name));
+        for (let i = 0; i < this.bookRequest.length; i++) {
+            console.log(this.borrow(this.bookRequest[i].name));
         }
     }
 
@@ -21,9 +21,9 @@ class Book {
         if (this.avilableCopies >= 1 && this.borrowers.has(userName) === false) {
             this.avilableCopies--;
             this.borrowers.add(userName);
-            return `${userName}: book suscesfullly borrowed by ${userName}`;
+            return `${userName}: ${this.title} book suscesfullly borrowed by ${userName}`;
         } else {
-            return `${userName}: book Taken`
+            return `${userName}: ${this.title} book Taken`
         } //end of else statement
     } //end of if statement
 
@@ -32,15 +32,14 @@ class Book {
             this.avilableCopies++;
 
             this.borrowers.delete(userName, )
-            return `book suscesfullly returned by ${userName}`;
+            return `${this.title} book suscesfullly returned by ${userName}`;
         } else {
-            return `${userName}: Book already returned`
+            return `${userName}: ${this.title} Book not borrowed`
         } //end of else statement
     } //end of if statement
 
 
 } //end of book class
-
 
 
 const library = {
