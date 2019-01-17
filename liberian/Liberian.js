@@ -1,4 +1,5 @@
 const book = require('../data/books');
+const queue = require('../data/queue');
 const libraryUsers = require('../data/libraryUsers');
 
 
@@ -6,6 +7,7 @@ class Liberian {
     constructor(name) {
         this.name = name;
     }
+
     borrow(userName, bookTitle) {
         if (book[bookTitle]) {
             if (libraryUsers[userName]['card'].has(bookTitle) == false && book[bookTitle].copies >= 1) {
@@ -31,7 +33,9 @@ class Liberian {
             return 'book does not exist';
         }
 
-    }
+    }//return book function
+
+ 
 }
 
 
