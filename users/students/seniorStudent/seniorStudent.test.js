@@ -23,6 +23,9 @@ describe('test that Student inherits properties and methods of person', () => {
     });
 });
 
-test('that the position is student', () => {
+test('that the position is seniorStudent', () => {
     expect(kingsley.position).toBe('seniorStudent');
+});
+test('that the priority is 2', () => {
+    expect(kingsley.priority).toBe(2);
 });
