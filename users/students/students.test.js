@@ -1,11 +1,11 @@
-const Teacher = require('./teacher');
+const Student = require('./students');
 const Person = require('../person');
 const queue = require('../../data/queue');
 
-const kingsley = new Teacher('kingsley');
+const kingsley = new Student('kingsley');
 
-describe('test that teacher inherits properties and methods of person', () => {
-    test('that teacher has property card', () => {
+describe('test that Student inherits properties and methods of person', () => {
+    test('that Student has property card', () => {
         expect(kingsley['card']).toBeTruthy();
     });
     test('that request function adds bookTitle to queue', () => {
@@ -21,4 +21,8 @@ describe('test that teacher inherits properties and methods of person', () => {
         kingsley.returnBook('amazon');
         expect(kingsley['card'].has('amazon')).toBeFalsy();
     });
+});
+
+test('that the position is student', () => {
+    expect(kingsley.position).toBe('student');
 });

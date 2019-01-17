@@ -22,3 +22,7 @@ describe('test that teacher inherits properties and methods of person', () => {
             expect(kingsley['card'].has('amazon')).toBeFalsy();
         });
 });
+
+test('that the position is teacher', () => {
+    expect(kingsley.position).toBe('teacher');
+});
