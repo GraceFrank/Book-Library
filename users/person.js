@@ -17,12 +17,6 @@ class Person{
     }
 }
 
-const aondofa = new Person('aondofa');
-
-aondofa.request('amazon');
-console.log(queue);
-console.log(queue.includes([aondofa, 'amazon']));
-
 
 
 module.exports = Person;
