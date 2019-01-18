@@ -1,8 +1,9 @@
-const Person = require('../users/person');
+const Person = require('../users/person'); 
 const Teacher = require('../users/teachers/teacher');
 const SeniorStudent = require('../users/students/juniorStudent/juniorStudent');
 const JuniorStudent = require('../users/students/seniorStudent/seniorStudent');
 
+// users for the library
 const libraryUsers = {
     austin: new Teacher('austin'),
     davidMobeyi: new Teacher('davidMobeyi'),

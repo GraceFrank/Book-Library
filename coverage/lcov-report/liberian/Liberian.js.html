@@ -22,7 +22,7 @@
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>16/16</span>
+        <span class='fraction'>21/21</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
@@ -32,12 +32,12 @@
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>3/3</span>
+        <span class='fraction'>5/5</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>16/16</span>
+        <span class='fraction'>21/21</span>
       </div>
     </div>
   </div>
@@ -83,21 +83,38 @@
 38
 39
 40
-41</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56</td><td class="line-coverage quiet"><span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
@@ -121,20 +138,35 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span></td><td class="text"><pre class="prettyprint lang-js">const book = require('../data/books');
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span></td><td class="text"><pre class="prettyprint lang-js">const book = require('../data/books');
+const queue = require('../data/queue');
 const libraryUsers = require('../data/libraryUsers');
 &nbsp;
-&nbsp;
+// the liberian handles all requests borrow and retunrn books
 class Liberian {
     constructor(name) {
         this.name = name;
     }
+//borrows book to a user if a book is avilable
     borrow(userName, bookTitle) {
         if (book[bookTitle]) {
-            if (libraryUsers[userName]['card'].has(bookTitle) == false &amp;&amp; book[bookTitle].copies &gt;= 1) {
-                book[bookTitle].copies -= 1;
+            if ((libraryUsers[userName]['card'].has(bookTitle) == false) &amp;&amp; (book[bookTitle].copies &gt;= 1)) {
+                book[bookTitle].copies--;
                 libraryUsers[userName].card.add(bookTitle);
             } else {
                 return 'book taken';
@@ -143,7 +175,7 @@ class Liberian {
             return 'book does not exist';
         }
     }
-&nbsp;
+//returns book book borrowed
     returnBook(userName, bookTitle) {
         if (book[bookTitle]) {
             if (libraryUsers[userName]['card'].has(bookTitle)) {
@@ -156,8 +188,21 @@ class Liberian {
             return 'book does not exist';
         }
 &nbsp;
-    }
+    }//end ofreturn book function
+&nbsp;
+&nbsp;
+//sortss the requst queue in order of priority  
+        processesbookRequest() {
+            queue.sort(function (a, b) {
+                return a[0].priority - b[0].priority;
+            });
+&nbsp;
+            for (let i = 0; i &lt; queue.length; i++) {
+                this.borrow(queue[i][0].userName, queue[i][1]);
+            }
+        }
 }
+&nbsp;
 &nbsp;
 &nbsp;
 &nbsp;
@@ -169,7 +214,7 @@ module.exports = Liberian;</pre></td></tr>
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Thu Jan 17 2019 17:01:52 GMT+0100 (West Africa Standard Time)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Fri Jan 18 2019 13:59:51 GMT+0100 (West Africa Standard Time)
 </div>
 </div>
 <script src="..\prettify.js"></script>

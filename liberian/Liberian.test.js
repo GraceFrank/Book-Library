@@ -1,6 +1,7 @@
 const Liberian = require('./Liberian');
 const book = require('../data/books');
 const libraryUsers = require('../data/libraryUsers');
+const queue = require('../data/queue');
 
 
 
@@ -15,7 +16,7 @@ let copies = book['amazon'].copies;
 
 describe('testing the borrow function', () => {
     progress.borrow('dareLawal', 'amazon');
-
+    
     test('that  actually borrows the book and reduce the book copies', () => {
         expect(book['amazon'].copies).toBe(copies - 1);
     });
@@ -36,6 +37,7 @@ describe('testing the borrow function', () => {
     test('that book not existing in the library cannot be borrowed ', () => {
         expect(progress.borrow('dareLawal', 'css3')).toBe('book does not exist');
     });
+
 });
 
 
