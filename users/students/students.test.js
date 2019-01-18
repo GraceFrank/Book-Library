@@ -1,5 +1,4 @@
 const Student = require('./students');
-const Person = require('../person');
 const queue = require('../../data/queue');
 
 const kingsley = new Student('kingsley');

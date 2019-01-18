@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1547825454015" clover="3.2.0">
-  <project timestamp="1547825454015" name="All files">
-    <metrics statements="58" coveredstatements="58" conditionals="10" coveredconditionals="10" methods="12" coveredmethods="12" elements="80" coveredelements="80" complexity="0" loc="58" ncloc="58" packages="7" files="9" classes="9">
+<coverage generated="1547827829174" clover="3.2.0">
+  <project timestamp="1547827829174" name="All files">
+    <metrics statements="56" coveredstatements="56" conditionals="10" coveredconditionals="10" methods="12" coveredmethods="12" elements="78" coveredelements="78" complexity="0" loc="56" ncloc="56" packages="7" files="9" classes="9">
       <package name="data">
         <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <file name="books.js" path="C:\Users\Admin\Documents\Decagon Institute\checkPoint1\BookLibrary\data\books.js">
@@ -47,7 +47,7 @@
           <line num="42" count="2" type="stmt"/>
           <line num="45" count="1" type="stmt"/>
           <line num="46" count="3" type="stmt"/>
-          <line num="56" count="2" type="stmt"/>
+          <line num="57" count="2" type="stmt"/>
         </file>
       </package>
       <package name="users">
@@ -63,22 +63,20 @@
         </file>
       </package>
       <package name="users.students">
-        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <file name="students.js" path="C:\Users\Admin\Documents\Decagon Institute\checkPoint1\BookLibrary\users\students\students.js">
-          <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+          <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
           <line num="1" count="5" type="stmt"/>
-          <line num="2" count="5" type="stmt"/>
           <line num="7" count="11" type="stmt"/>
           <line num="8" count="11" type="stmt"/>
           <line num="15" count="5" type="stmt"/>
         </file>
       </package>
       <package name="users.students.juniorStudent">
-        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <file name="juniorStudent.js" path="C:\Users\Admin\Documents\Decagon Institute\checkPoint1\BookLibrary\users\students\juniorStudent\juniorStudent.js">
-          <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+          <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
           <line num="1" count="3" type="stmt"/>
-          <line num="2" count="3" type="stmt"/>
           <line num="6" count="5" type="stmt"/>
           <line num="7" count="5" type="stmt"/>
           <line num="8" count="5" type="stmt"/>
@@ -102,10 +100,10 @@
         <file name="teacher.js" path="C:\Users\Admin\Documents\Decagon Institute\checkPoint1\BookLibrary\users\teachers\teacher.js">
           <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
           <line num="1" count="3" type="stmt"/>
+          <line num="6" count="5" type="stmt"/>
           <line num="7" count="5" type="stmt"/>
           <line num="8" count="5" type="stmt"/>
-          <line num="9" count="5" type="stmt"/>
-          <line num="16" count="3" type="stmt"/>
+          <line num="12" count="3" type="stmt"/>
         </file>
       </package>
     </metrics>
