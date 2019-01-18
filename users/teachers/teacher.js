@@ -1,15 +1,12 @@
-const Person = require('../person');
-const queue = require('../../data/queue');
+const Person = require("../person");
 
-class Teacher extends Person{
-    constructor(userName) {
-        super(userName);
-        this.position = 'teacher';
-        this.priority = 1;
-        
-    }
-
+//teacher inherits from person
+class Teacher extends Person {
+  constructor(userName) {
+    super(userName);
+    this.position = "teacher";
+    this.priority = 1;
+  }
 }
-
 
 module.exports = Teacher;

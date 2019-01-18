@@ -36,7 +36,7 @@ class Liberian {
     }//end ofreturn book function
 
 
-//sortss the requst queue in order of priority  
+//sorts the requst queue in order of priority  
         processesbookRequest() {
             queue.sort(function (a, b) {
                 return a[0].priority - b[0].priority;
@@ -46,6 +46,7 @@ class Liberian {
                 this.borrow(queue[i][0].userName, queue[i][1]);
             }
         }
+        
 }
 
 
