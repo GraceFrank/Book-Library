@@ -1,11 +1,7 @@
 const Liberian = require('./Liberian');
-const book = require('../data/books');
 const libraryUsers = require('../data/libraryUsers');
 const queue = require('../data/queue');
 
-const Person = require('../users/person');
-const Student = require('../users/students/students');
-const Teaher = require('../users/teachers/teacher');
 
 const progress = new Liberian('progress');
 libraryUsers.josh.request('amazon')
@@ -24,5 +20,7 @@ describe('testing the process book require', () => {
         test('that the processesbookRequest function actually sorts the array', () => {
             expect(queue[2][0]).toEqual(libraryUsers.dareLawal);
         });
+
 });
+
 

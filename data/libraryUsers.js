@@ -1,4 +1,4 @@
-const Person = require('../users/person'); 
+
 const Teacher = require('../users/teachers/teacher');
 const SeniorStudent = require('../users/students/juniorStudent/juniorStudent');
 const JuniorStudent = require('../users/students/seniorStudent/seniorStudent');

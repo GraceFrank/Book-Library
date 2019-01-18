@@ -1,6 +1,6 @@
 const Student = require('../students');
-const queue = require('../../../data/queue');
 
+//junior student inherits from student class
 class JuniorStudent extends Student {
     constructor(userName) {
         super(userName);
