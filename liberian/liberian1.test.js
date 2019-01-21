@@ -24,15 +24,15 @@ describe('testing the process book require', () => {
 
 });
 
-describe('testing the returnall book functions', ()=>{
+describe('testing the returnall book functions', () => {
     libraryUsers.dareLawal.returnBook('amazon');
-    test('that if darelawar retuns a book it will be retunred', ()=>{
+    test('that if darelawar retuns a book it will be retunred', () => {
 
         progress.returnallBooks();
         expect(libraryUsers.dareLawal.card.has('amazon')).toBeFalsy();
     })
-     test('that if darelawar retuns a book it will be retunred', () => {
-         progress.returnallBooks();
-         expect(returnQueue[0][0]).toEqual(libraryUsers.dareLawal);
-     })
+    test('that if darelawar retuns a book it will be retunred', () => {
+        progress.returnallBooks();
+        expect(returnQueue[0][0]).toEqual(libraryUsers.dareLawal);
+    })
 })

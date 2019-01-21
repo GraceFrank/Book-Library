@@ -10,7 +10,7 @@ describe('test the person class', () => {
         expect(aondofa.card).not.toBeFalsy();
     });
 
-})
+});
 
 
 describe('testing the request function if it add the person object and booktitle to queue', () => {
@@ -32,4 +32,4 @@ describe('testing the returnBook function adds a aperson to queue', () => {
     });
 
 
-})
+});

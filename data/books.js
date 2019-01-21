@@ -1,4 +1,4 @@
-//library books
+//library books, stores all books for the library
 const books = {
     amazon: {
         title: 'amazon',
@@ -15,7 +15,7 @@ const books = {
         author: 'sandra bullocks',
         copies: 4
     }
-}
+};
 
 
 module.exports = books;
