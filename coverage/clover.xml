@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1547827829174" clover="3.2.0">
-  <project timestamp="1547827829174" name="All files">
-    <metrics statements="56" coveredstatements="56" conditionals="10" coveredconditionals="10" methods="12" coveredmethods="12" elements="78" coveredelements="78" complexity="0" loc="56" ncloc="56" packages="7" files="9" classes="9">
+<coverage generated="1548064359727" clover="3.2.0">
+  <project timestamp="1548064359727" name="All files">
+    <metrics statements="62" coveredstatements="62" conditionals="10" coveredconditionals="10" methods="13" coveredmethods="13" elements="85" coveredelements="85" complexity="0" loc="62" ncloc="62" packages="7" files="10" classes="10">
       <package name="data">
-        <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <metrics statements="11" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <file name="books.js" path="C:\Users\Admin\Documents\Decagon Institute\checkPoint1\BookLibrary\data\books.js">
           <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
           <line num="2" count="2" type="stmt"/>
@@ -11,55 +11,64 @@
         </file>
         <file name="libraryUsers.js" path="C:\Users\Admin\Documents\Decagon Institute\checkPoint1\BookLibrary\data\libraryUsers.js">
           <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-          <line num="2" count="2" type="stmt"/>
-          <line num="3" count="2" type="stmt"/>
-          <line num="4" count="2" type="stmt"/>
-          <line num="7" count="2" type="stmt"/>
-          <line num="16" count="2" type="stmt"/>
-        </file>
-        <file name="queue.js" path="C:\Users\Admin\Documents\Decagon Institute\checkPoint1\BookLibrary\data\queue.js">
-          <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-          <line num="1" count="7" type="stmt"/>
-          <line num="7" count="7" type="stmt"/>
-        </file>
-      </package>
-      <package name="liberian">
-        <metrics statements="21" coveredstatements="21" conditionals="10" coveredconditionals="10" methods="5" coveredmethods="5"/>
-        <file name="Liberian.js" path="C:\Users\Admin\Documents\Decagon Institute\checkPoint1\BookLibrary\liberian\Liberian.js">
-          <metrics statements="21" coveredstatements="21" conditionals="10" coveredconditionals="10" methods="5" coveredmethods="5"/>
           <line num="1" count="2" type="stmt"/>
           <line num="2" count="2" type="stmt"/>
           <line num="3" count="2" type="stmt"/>
-          <line num="8" count="2" type="stmt"/>
-          <line num="12" count="7" type="cond" truecount="2" falsecount="0"/>
-          <line num="13" count="6" type="cond" truecount="4" falsecount="0"/>
-          <line num="14" count="3" type="stmt"/>
-          <line num="15" count="3" type="stmt"/>
+          <line num="14" count="2" type="stmt"/>
+          <line num="24" count="2" type="stmt"/>
+        </file>
+        <file name="queue.js" path="C:\Users\Admin\Documents\Decagon Institute\checkPoint1\BookLibrary\data\queue.js">
+          <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+          <line num="2" count="7" type="stmt"/>
+          <line num="8" count="7" type="stmt"/>
+        </file>
+        <file name="returnQueue.js" path="C:\Users\Admin\Documents\Decagon Institute\checkPoint1\BookLibrary\data\returnQueue.js">
+          <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+          <line num="1" count="7" type="stmt"/>
+          <line num="3" count="7" type="stmt"/>
+        </file>
+      </package>
+      <package name="liberian">
+        <metrics statements="24" coveredstatements="24" conditionals="10" coveredconditionals="10" methods="6" coveredmethods="6"/>
+        <file name="Liberian.js" path="C:\Users\Admin\Documents\Decagon Institute\checkPoint1\BookLibrary\liberian\Liberian.js">
+          <metrics statements="24" coveredstatements="24" conditionals="10" coveredconditionals="10" methods="6" coveredmethods="6"/>
+          <line num="1" count="2" type="stmt"/>
+          <line num="2" count="2" type="stmt"/>
+          <line num="3" count="2" type="stmt"/>
+          <line num="4" count="2" type="stmt"/>
+          <line num="9" count="2" type="stmt"/>
+          <line num="13" count="7" type="cond" truecount="2" falsecount="0"/>
+          <line num="14" count="6" type="cond" truecount="4" falsecount="0"/>
+          <line num="16" count="3" type="stmt"/>
           <line num="17" count="3" type="stmt"/>
-          <line num="20" count="1" type="stmt"/>
-          <line num="25" count="9" type="cond" truecount="2" falsecount="0"/>
-          <line num="26" count="8" type="cond" truecount="2" falsecount="0"/>
-          <line num="27" count="1" type="stmt"/>
-          <line num="28" count="1" type="stmt"/>
-          <line num="30" count="7" type="stmt"/>
-          <line num="33" count="1" type="stmt"/>
-          <line num="41" count="1" type="stmt"/>
-          <line num="42" count="2" type="stmt"/>
-          <line num="45" count="1" type="stmt"/>
-          <line num="46" count="3" type="stmt"/>
-          <line num="57" count="2" type="stmt"/>
+          <line num="19" count="3" type="stmt"/>
+          <line num="22" count="1" type="stmt"/>
+          <line num="28" count="11" type="cond" truecount="2" falsecount="0"/>
+          <line num="29" count="8" type="cond" truecount="2" falsecount="0"/>
+          <line num="30" count="1" type="stmt"/>
+          <line num="31" count="1" type="stmt"/>
+          <line num="33" count="7" type="stmt"/>
+          <line num="36" count="3" type="stmt"/>
+          <line num="44" count="1" type="stmt"/>
+          <line num="45" count="2" type="stmt"/>
+          <line num="49" count="1" type="stmt"/>
+          <line num="50" count="3" type="stmt"/>
+          <line num="59" count="2" type="stmt"/>
+          <line num="60" count="2" type="stmt"/>
+          <line num="70" count="2" type="stmt"/>
         </file>
       </package>
       <package name="users">
-        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+        <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
         <file name="person.js" path="C:\Users\Admin\Documents\Decagon Institute\checkPoint1\BookLibrary\users\person.js">
-          <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+          <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
           <line num="1" count="7" type="stmt"/>
-          <line num="5" count="17" type="stmt"/>
+          <line num="2" count="7" type="stmt"/>
           <line num="6" count="17" type="stmt"/>
-          <line num="10" count="18" type="stmt"/>
-          <line num="15" count="5" type="stmt"/>
-          <line num="22" count="7" type="stmt"/>
+          <line num="7" count="17" type="stmt"/>
+          <line num="12" count="17" type="stmt"/>
+          <line num="17" count="6" type="stmt"/>
+          <line num="24" count="7" type="stmt"/>
         </file>
       </package>
       <package name="users.students">

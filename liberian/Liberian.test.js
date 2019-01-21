@@ -16,7 +16,7 @@ let copies = book['amazon'].copies;
 
 describe('testing the borrow function', () => {
     progress.borrow('dareLawal', 'amazon');
-    
+
     test('that  actually borrows the book and reduce the book copies', () => {
         expect(book['amazon'].copies).toBe(copies - 1);
     });

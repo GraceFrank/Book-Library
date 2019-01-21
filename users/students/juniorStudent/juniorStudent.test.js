@@ -1,4 +1,3 @@
-
 const JuniorStudent = require('./juniorStudent')
 const queue = require('../../../data/queue');
 
