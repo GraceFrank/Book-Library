@@ -1,4 +1,3 @@
-const Student = require('../students');
 const SeniorStudent = require('./seniorStudent')
 const queue = require('../../../data/queue');
 

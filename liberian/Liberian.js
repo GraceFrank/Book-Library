@@ -11,8 +11,9 @@ class Liberian {
     //borrows book to a user if a book is avilable
     borrow(userName, bookTitle) {
         if (book[bookTitle]) { //check if the book exist in the lirary
+
+            //checks if the book is in the users card  and  checks that the book copies is not finished
             if ((libraryUsers[userName]['card'].has(bookTitle) == false) && (book[bookTitle].copies >= 1)) {
-                //checks if the book is in the users card                   checks that the book copies is not finished
                 book[bookTitle].copies--;
                 libraryUsers[userName].card.add(bookTitle);
             } else {
@@ -47,14 +48,11 @@ class Liberian {
 
         //perform  borrow book for every usere in the queue
         for (let i = 0; i < queue.length; i++) {
-            this.borrow(queue[i][0].userName, queue[i][1]);
-            /*the queue is an arrary of arrays
-                                
-                            */
+            this.borrow(queue[i][0].userName, queue[i][1]); //the queue is an arrary of arrays
 
         }
     }
-
+    //iterates overthe returnQueue and returns book borrowed by users in the queue
     returnallBooks() {
         for (let i = 0; i < returnQueue.length; i++) {
             this.returnBook(returnQueue[i][0].userName, returnQueue[1]);

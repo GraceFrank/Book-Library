@@ -1,5 +1,4 @@
 const Student = require('../students');
-const queue = require('../../../data/queue');
 
 class SeniorStudent extends Student {
     constructor(userName) {
